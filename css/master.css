@@ -1,0 +1,130 @@
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d'autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d'utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+header {
+  background: rgb(221, 234, 74) url('texture.png');
+  padding: 12px;
+  color : #fff;
+  min-height: 10vh;
+  background-size: auto;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+  border: 1px solid #ffffff;
+}
+
+header a {
+  text-decoration: none;
+  color : #ffffff;
+  padding: 12px;
+  display: block;
+  background-color: #b8f0bf
+
+}
+
+/* A noter ici :
+1. L'utilisation d'une class sur la div, nous la ciblons ici dans la CSS au moyen d'un point .
+2. l'utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu'est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+h1 {
+  border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+}
+
+.hero {
+  background: rgb(221, 234, 74) url('gravure.jpg') top center no-repeat;
+  color : #fff;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d'aleterner visuellement les sections.
+*/
+section {
+  min-height: 90vh;
+  padding: 42px;
+}
+
+.odd {
+  background: rgb(139, 132, 142);
+}
+
+.even {
+  background: #9dbf97;
+}
+
+/* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+.image-block {
+  max-width: 1200px;
+  border: none solid #000;
+  background-size: auto;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 55px
+
+}
+
+.image-block img {
+  width : 100%;
+display:block;
+}
+
+figcaption {
+  font-family: 'Fahkwang', serif;
+  font-style: italic;
+padding-left: 50px
+}
+
+footer {
+  background: rgb(221, 234, 74) url('texture.png');
+  padding: 12px;
+  color : #fff;
+  min-height:30vh;
+  background-size: auto;
+  background-attachment: fixed;
+  display: flex;
+}
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/
