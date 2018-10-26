@@ -19,11 +19,14 @@ header {
 }
 
 header ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   list-style-type: none;
 }
 
 header li {
-  display: inline-block;
+
   border: 1px solid #ffffff;
 }
 
@@ -67,6 +70,18 @@ border: 0px solid #000000;
 section {
   min-height: 90vh;
   padding: 42px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.illustration {
+  flex-basis: 860px;
+}
+
+.content {
+  flex-basis: 480px;
 }
 
 .odd {
@@ -75,6 +90,7 @@ section {
 
 .even {
   background: #9dbf97;
+  flex-direction: row-reverse;
 }
 
 /* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
